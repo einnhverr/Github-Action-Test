@@ -17,7 +17,7 @@ jobs:
         shell: python
 
   run-windows-commands:
-    runs-on: windwows-latest
+    runs-on: windows-latest
     steps:
       - name: Directory powershell
         run: Get-Location
