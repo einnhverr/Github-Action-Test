@@ -1,4 +1,4 @@
-name: Acions Worflow
+name: Actions Worflow
 on: [push, pull_request]
 jobs:
   run-github-actions:
