@@ -12,6 +12,8 @@ jobs:
         run: |
           pwd
           ls -a
+      - name: payload
+        run: echo "${{ github.event.client_payload.env }}"
       - name: Gihub Action environment variables
         run: |
           echo $GITHUB_SHA
