@@ -1,0 +1,15 @@
+name: 'My Example Action'
+description: "An example action"
+
+inputs:
+  message:
+    description: 'Dispay this message if provided'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Print Message
+      id: printmessage
+      shell: bash
+      run: |
+        echo "${{ inputs.message}}"
